@@ -1,0 +1,171 @@
+name: GitHub Actions Build and Deploy
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "*"
+      # Push events to matching v*, i.e. v1.0, v20.15.10
+    branches:
+      - master
+env:
+  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}              
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master  
+      with:
+          # 配置子模块
+          submodules: true
+    - name: Get Last Tag
+      id: last_tag
+      run: |
+          latest_tag=${{ github.ref }}
+          echo "::set-output name=tag::$latest_tag"
+
+    - name: Extract Last Digit
+      id: extract_digit
+      run: |
+          last_tag=$INPUT_TAG
+          last_digit=$(echo "$last_tag" | awk -F. '{print $NF}')
+          echo "::set-output name=last_digit::$last_digit"
+    - name: Increment Last Digit
+      id: increment_digit
+      run: |
+          last_digit=$INPUT_LAST_DIGIT
+          new_last_digit=$((last_digit + 1))
+          echo "::set-output name=new_last_digit::$new_last_digit"
+
+  #  - name: Generate New Tag
+    #  id: generate_tag
+     # run: |
+         # last_tag=$INPUT_TAG
+        #  new_last_digit=$INPUT_NEW_LAST_DIGIT
+       #   new_tag=$(echo "$last_tag" | awk -F. '{$NF='$new_last_digit'}1')
+       #   echo "::set-output name=new_tag::$new_tag"
+    - name: Build
+      run: |
+        sudo apt update
+        sudo apt install mingw-w64 gcc-arm-none-eabi clang  g++-aarch64-linux-gnu p7zip-full -y
+        sudo bash ./build_windows.sh main.cpp -DNDEBUG
+        g++ ./main.cpp -DNDEBUG -o SCE_amd64_linux
+        aarch64-linux-gnu-g++ main.cpp -o SCE_aarch64_linux
+
+        cp -vf ./SCE_Win_amd64.exe ./windows/
+        rm -rvf ./windows/*.cpp
+        tar -czvf SCE_Win_amd64.tgz ./windows/
+        tar -czvf SCE_aarch64_linux.tgz SCE_aarch64_linux
+        tar -czvf SCE_amd64_linux.tgz SCE_amd64_linux
+        rm -rvf ./windows/*.exe
+        cp -rvf ./SCE_Win_i386.exe ./windows/
+        tar -czvf SCE_Win_i386.tgz ./windows/
+        7z a bootstrap-x86_64.zip ./SCE_amd64_linux -p'/bin/'
+        7z a bootstrap-aarch64.zip ./SCE_aarch64_linux -p'/bin/'
+        #tar -czvf SCE_Win_arm64.tgz SCE_Win_arm64.exe
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v4
+      with:
+          name: SCE_Win_amd64.exe
+          path: ./SCE_Win_amd64.exe
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v4
+      with:
+          name: SCE_aarch64_linux
+          path: ./SCE_aarch64_linux
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v4
+      with:
+          name: SCE_amd64_linux
+          path: ./SCE_amd64_linux
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+            tag_name: ${{ github.ref }}_release
+            release_name: Release ${{ github.ref }}
+            draft: false
+            prerelease: false
+    - name: Upload Release Asset
+      id: upload-release-asset 
+      uses: actions/upload-release-asset@v1
+      env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+            upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+            asset_path: ./SCE_Win_amd64.tgz
+            asset_name: SCE_Win_amd64.tgz
+            asset_content_type: application/zip  
+
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v4
+      with:
+          name: SCE_Win_i386.exe
+          path: ./SCE_Win_i386.exe
+            #- name: 'Upload Artifact'
+            # uses: actions/upload-artifact@v4
+            # with:
+            # name: SCE_Win_arm64.exe
+            # path: ./SCE_Win_arm64.exe
+            #- name: Upload Release Asset
+            # id: upload-release-asset-1
+            # uses: actions/upload-release-asset@v1
+            # env:
+            # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            # with:
+            # upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+            # asset_path: ./SCE_Win_arm64.tgz
+            # asset_name: SCE_Win_arm64.tgz
+            # asset_content_type: application/zip  
+    - name: Upload Release Asset
+      id: upload-release-asset-3
+      uses: actions/upload-release-asset@v1
+      env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+            upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+            asset_path: ./SCE_Win_i386.tgz
+            asset_name: SCE_Win_i386.tgz
+            asset_content_type: application/zip    
+    - name: Upload Release Asset
+      id: upload-release-asset-4
+      uses: actions/upload-release-asset@v1
+      env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+            upload_url: ${{ steps.create_release.outputs.upload_url }}
+            asset_path: ./SCE_aarch64_linux.tgz
+            asset_name: SCE_aarch64_linux.tgz
+            asset_content_type: application/zip
+    - name: Upload Release Asset
+      id: upload-release-asset-5
+      uses: actions/upload-release-asset@v1
+      env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+            upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
+            asset_path: ./SCE_amd64_linux.tgz
+            asset_name: SCE_amd64_linux.tgz
+            asset_content_type: application/zip    
+      - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v4
+      with:
+          name: bootstrap-x86_64.zip
+          path: ./bootstrap-x86_64.zip
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v4
+      with:
+          name: bootstrap-i686.zip
+          path: ./bootstrap-i686.zip
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v4
+      with:
+          name: bootstrap-arm.zip
+          path: ./bootstrap-arm.zip
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v4
+      with:
+          name: bootstrap-aarch64.zip
+          path: ./bootstrap-aarch64.zip

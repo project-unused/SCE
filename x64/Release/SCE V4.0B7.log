@@ -1,0 +1,286 @@
+﻿  main.cpp
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(13,10): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(14,10): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(16,15): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(17,15): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(21,10): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(22,10): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(24,10): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(26,10): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(31,10): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(34,10): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(36,11): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(44,18): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(46,16): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(57,18): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(58,17): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(60,19): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(61,18): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(66,124): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(68,126): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(71,124): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(75,124): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(79,122): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(88,9): warning C4244: “return”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(63,8): warning C4101: “foldept”: 未引用的局部变量
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(93,10): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(94,10): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(96,15): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(97,15): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(101,10): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(102,10): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(104,10): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(106,10): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(111,10): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(114,10): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(116,11): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(124,18): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(126,16): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(137,18): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(138,17): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(140,19): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(141,18): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(145,110): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(147,108): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(149,110): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(157,9): warning C4244: “return”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(143,23): warning C4101: “mainept”: 未引用的局部变量
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(162,10): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(163,10): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(165,15): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(166,15): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(170,10): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(171,10): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(173,10): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(175,10): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(180,10): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(183,10): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(185,11): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(193,18): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(195,16): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(206,18): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(207,17): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(209,19): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(210,18): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(215,118): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(212,23): warning C4101: “mainept”: 未引用的局部变量
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(212,8): warning C4101: “foldept”: 未引用的局部变量
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(227,10): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(228,10): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(230,15): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(231,15): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(235,10): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(236,10): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(238,10): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(240,10): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(253,115): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(257,119): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(260,115): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(264,115): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\Core.h(268,111): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\tools.h(49,35): warning C4101: “e”: 未引用的局部变量
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\tools.h(52,36): warning C4101: “e”: 未引用的局部变量
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\tools.h(56,32): warning C4101: “e”: 未引用的局部变量
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\tools.h(148,3): warning C4286: “nlohmann::json_abi_v3_11_3::basic_json<std::map,std::vector,std::string,bool,int64_t,uint64_t,double,std::allocator,nlohmann::json_abi_v3_11_3::adl_serializer,std::vector<uint8_t,std::allocator<uint8_t>>,void>::out_of_range &”: 由基类(“std::exception &”)在行 145 上捕获
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\tools.h(151,3): warning C4286: “nlohmann::json_abi_v3_11_3::basic_json<std::map,std::vector,std::string,bool,int64_t,uint64_t,double,std::allocator,nlohmann::json_abi_v3_11_3::adl_serializer,std::vector<uint8_t,std::allocator<uint8_t>>,void>::parse_error &”: 由基类(“std::exception &”)在行 145 上捕获
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\tools.h(145,26): warning C4101: “e”: 未引用的局部变量
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\tools.h(148,30): warning C4101: “e”: 未引用的局部变量
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\tools.h(151,29): warning C4101: “e”: 未引用的局部变量
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\tools.h(192,3): warning C4286: “nlohmann::json_abi_v3_11_3::basic_json<std::map,std::vector,std::string,bool,int64_t,uint64_t,double,std::allocator,nlohmann::json_abi_v3_11_3::adl_serializer,std::vector<uint8_t,std::allocator<uint8_t>>,void>::parse_error &”: 由基类(“std::exception &”)在行 189 上捕获
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\tools.h(195,3): warning C4286: “nlohmann::json_abi_v3_11_3::basic_json<std::map,std::vector,std::string,bool,int64_t,uint64_t,double,std::allocator,nlohmann::json_abi_v3_11_3::adl_serializer,std::vector<uint8_t,std::allocator<uint8_t>>,void>::out_of_range &”: 由基类(“std::exception &”)在行 189 上捕获
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\tools.h(163,5): error C4996: 'nlohmann::json_abi_v3_11_3::basic_json<std::map,std::vector,std::string,bool,int64_t,uint64_t,double,std::allocator,nlohmann::json_abi_v3_11_3::adl_serializer,std::vector<uint8_t,std::allocator<uint8_t>>,void>::operator <<': Since 3.0.0; use operator>>(std::istream&, basic_json&)
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\tools.h(187,6): error C4996: 'nlohmann::json_abi_v3_11_3::basic_json<std::map,std::vector,std::string,bool,int64_t,uint64_t,double,std::allocator,nlohmann::json_abi_v3_11_3::adl_serializer,std::vector<uint8_t,std::allocator<uint8_t>>,void>::operator >>': Since 3.0.0; use operator<<(std::ostream&, const basic_json&)
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\tools.h(189,26): warning C4101: “e”: 未引用的局部变量
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\tools.h(192,29): warning C4101: “e”: 未引用的局部变量
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\tools.h(195,30): warning C4101: “e”: 未引用的局部变量
+  (编译源文件“main.cpp”)
+  
+C:\Users\seewo\source\repos\sce v4.0b7\SCE V4.0B7\tools.h(213,3): error C2059: 语法错误:“}”
+  (编译源文件“main.cpp”)
+  

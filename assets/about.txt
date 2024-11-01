@@ -1,0 +1,7 @@
+[SupportCard Evalutor]
+SCE
+
+SCE遵循MIT开源协议
+
+SCE贡献者：
+	望向天脉、xingguangcuican6666。
