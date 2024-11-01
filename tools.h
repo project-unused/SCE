@@ -9,7 +9,7 @@
 #include "Val.h"
 #include <fstream>
 #include <iostream>
-#include <direct.h>
+
 #define N "normal"
 using namespace std;
 using json = nlohmann::json;
@@ -17,8 +17,6 @@ class SCE_tools
 {
 public:
 	void fortest() {
-
-		_mkdir("../assets/");
 		ofstream o("../assets/res.json");
 		o << "{}" << endl;
 		o.close();
@@ -60,7 +58,7 @@ public:
 		i >> j;
 		i.close();
 		if (j.contains(setting_name)) {
-			j[setting_name] = setting_stat; // ÉèÖÃĞÂµÄÖµ
+			j[setting_name] = setting_stat; //      Âµ Öµ
 		}
 		std::ofstream o("../assets/setting.json");
 		o<<j;
@@ -110,12 +108,12 @@ public:
 			ex_res_saver = 0;
 		}
 		else if (errortype == "read") {
-			cout << "\033[31mÎŞ·¨¶ÁÈ¡×ÊÔ´ÎÄ¼ş\033[0m\n";
+			cout << "\033[31m Ş·   È¡  Ô´ Ä¼ \033[0m\n";
 			ex_res_saver = 0;
 			getchar();
 		}
 		else if (errortype == "write") {
-			cout << "\033[31mÎŞ·¨Ğ´Èë×ÊÔ´ÎÄ¼ş\033[0m\n";
+			cout << "\033[31m Ş· Ğ´    Ô´ Ä¼ \033[0m\n";
 			ex_res_saver = 0;
 			getchar();
 
@@ -123,10 +121,10 @@ public:
 		else if (errortype == "delete") {
 			system(CLS);
 			int num;
-			cout << "\033[31mÎŞ·¨É¾³ıÖ¸¶¨×ÊÔ´,Èç¹ûÇ¿ÖÆÉ¾³ı£¬¿ÉÄÜ»á¶ªÊ§ËùÓĞÊı¾İ£¡\033[0m\n[1]Ç¿ÖÆÉ¾³ı   [2]·µ»Ø\n";
+			cout << "\033[31m Ş· É¾  Ö¸    Ô´,   Ç¿  É¾       Ü»á¶ªÊ§       İ£ \033[0m\n[1]Ç¿  É¾     [2]    \n";
 			ex_res_saver = 0;
 			if (inputErr) {
-				cout << "\033[31mÇëÊäÈëÓĞĞ§Êı×Ö\033[0m\n";
+				cout << "\033[31m        Ğ§    \033[0m\n";
 				inputErr = 0;
 			}
 			cout << "[ ]\b\b";
@@ -137,7 +135,7 @@ public:
 				o << "{}" << endl;
 				o.close();
 				system(CLS);
-				cout << "\033[32mÉ¾³ıÍê³É£¡\033[0m";
+				cout << "\033[32mÉ¾    É£ \033[0m";
 				getchar();
 				break;
 			};
@@ -166,7 +164,7 @@ protected:
 	void auto_fix() {
 		std::ofstream o("../assets/setting.json");
 		if (!o.is_open()) {
-			cout << "\033[31m×Ô¶¯ĞŞ¸´Ê§°Ü,ÇëÖØĞÂÏÂÔØSCE×îĞÂ°æ\033[0m";
+			cout << "\033[31m Ô¶  Ş¸ Ê§  ,          SCE   Â° \033[0m";
 			//getchar();
 			cin.get();
 			exit(1);
@@ -183,7 +181,7 @@ protected:
 		o << j << endl;
 		o.close();
 		system(CLS);
-		cout << "ĞŞ¸´Íê³É£¬ÇëÖØĞÂÆô¶¯Èí¼ş£¡";
+		cout << " Ş¸   É£               ";
 		//getchar();
 		cin.get();
 
@@ -192,9 +190,9 @@ protected:
 	}
 	void print_error() {
 		system(CLS);
-		cout << "\033[31mÈ±ÉÙ±ØÒªÎÄ¼ş£¬ÇëÖØĞÂÏÂÔØ×îĞÂ°æ±¾µÄSCE£¬»òÕß½øĞĞ×Ô¶¯ĞŞ¸´\033[0m\n[1]×Ô¶¯ĞŞ¸´     [2]ºöÂÔ     [3]ÍË³ö" << endl;
+		cout << "\033[31mÈ± Ù± Òª Ä¼                Â°æ±¾  SCE     ß½    Ô¶  Ş¸ \033[0m\n[1] Ô¶  Ş¸      [2]         [3] Ë³ " << endl;
 		if (inputErr == 1) {
-			cout << "\n\033[31mÊäÈë´íÎó\033[0m\n\n" << endl; cin.clear(); cin.ignore(); inputErr = 0;
+			cout << "\n\033[31m       \033[0m\n\n" << endl; cin.clear(); cin.ignore(); inputErr = 0;
 		}
 		cout << "\n[ ]\b\b";
 	};
